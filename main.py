@@ -17,15 +17,15 @@ while not nome_valido:
 while not salario_valido:
     try: 
         salario = int(input("Digite o Salário: "))
+        salario_valido = True
     except ValueError:
         print("O salario não é um salario válido")
-        break
 while not porcentagem_valida:  
     try:
         porcentagem = int(input("Qual a porcentagem do bonus: "))
+        porcentagem_valida = True
     except ValueError:
         print("A porcentagem não é válida")
-        break
     
     bonus = salario * porcentagem / 100
 
