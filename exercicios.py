@@ -31,12 +31,12 @@ print(f"A temperatura de {temperatura}°C é classificada como: {classificacao}"
 # como `log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}`, 
 # escreva um programa que imprima a mensagem se a severidade for 'ERROR'.
 
-log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão com o banco de dados.'}
+""" log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão com o banco de dados.'}
 log2 = {'timestamp': '2021-06-23 10:01:00', 'level': 'INFO', 'message': 'Operação concluída com sucesso.'}
 
 
 if log['level'] == 'ERROR':
-    print(f"Erro encontrado: {log['message']}")
+    print(f"Erro encontrado: {log['message']}") """
 
 
 
