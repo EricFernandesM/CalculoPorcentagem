@@ -3,25 +3,42 @@
 # que todos os registros tenham valores positivos para `quantidade` e `preço`. 
 # Escreva um programa que verifique esses campos e imprima "Dados válidos" se ambos 
 # forem positivos ou "Dados inválidos" caso contrário.
-Venda1 = {"Quantidade": -1, "Valor": 200}
+""" Venda1 = {"Quantidade": -1, "Valor": 200}
 
 if Venda1["Quantidade"] < 0 or Venda1["Valor"] < 0:
     print("Dados Invalidos")
 else:
-    print("Dados Validos")
-
+    print("Dados Validos") """
 
 
 ### Exercício 2: Classificação de Dados de Sensor
 # Imagine que você está trabalhando com dados de sensores IoT. 
 # Os dados incluem medições de temperatura. Você precisa classificar cada leitura 
 # como 'Baixa', 'Normal' ou 'Alta'. Considerando que:
+""" temperatura = 22
 
+if temperatura < 18:
+    classificacao = 'Baixa'
+elif 18 <= temperatura <= 26:
+    classificacao = 'Normal'
+else:
+    classificacao = 'Alta'
+
+print(f"A temperatura de {temperatura}°C é classificada como: {classificacao}") """
 ### Exercício 3: Filtragem de Logs por Severidade
 # Você está analisando logs de uma aplicação e precisa filtrar mensagens 
 # com severidade 'ERROR'. Dado um registro de log em formato de dicionário 
 # como `log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}`, 
 # escreva um programa que imprima a mensagem se a severidade for 'ERROR'.
+
+log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão com o banco de dados.'}
+log2 = {'timestamp': '2021-06-23 10:01:00', 'level': 'INFO', 'message': 'Operação concluída com sucesso.'}
+
+
+if log['level'] == 'ERROR':
+    print(f"Erro encontrado: {log['message']}")
+
+
 
 ### Exercício 4: Validação de Dados de Entrada
 # Antes de processar os dados de usuários em um sistema de recomendação, 
